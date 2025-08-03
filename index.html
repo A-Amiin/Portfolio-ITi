@@ -1,128 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Amin | Portfolio</title>
+    <title>Ahmed Mohamed Amin - Frontend Software Engineer</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="logo">A.A</div>
-        <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <a href="" class="cv-button">Download CV</a>
-        <div class="burger">
-            <i class="fas fa-bars"></i>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="brand">
+                <span>A.A</span>
+            </div>
+            <div class="mobile-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <!-- Main Section -->
-    <section class="main-section" id="home">
-        <div class="main-text">
-            <h1>Ahmed Mohamed Amin</h1>
-            <p>
-                Passionate and detail-driven Frontend Engineer with deep expertise in React and a solid understanding of
-                Next.js fundamentals. I care deeply about UI/UX, and I approach development with a balance of clean
-                engineering and thoughtful design. Strong in system analysis and UI architecture, I aim to build
-                experiences
-                that are not just functional, but intuitive and impactful. I believe in continuous learning and always
-                seek better
-                opportunities to grow technically and contribute to meaningful, impactful products.
-
-            </p>
-        </div>
-        <div class="main-img">
-            <img src="./0.jpg" alt="Profile Picture">
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="card">
-                <img src="./1.jpeg" alt="Project 1">
-                <h3>Tawasol</h3>
-                <p>Social media platform with posts, comments, and likes. Built with React, Node, MongoDB.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="./profile.jpg" alt="Ahmed Mohamed Amin" class="profile-photo">
             </div>
-            <div class="card">
-                <img src="./2.webp" alt="Project 2">
-                <h3>Ecommerce Dashboard</h3>
-                <p>Admin dashboard with charts and Firebase auth. Built using Next.js and Tailwind.</p>
-            </div>
-            <div class="card">
-                <img src="./3.jpg" alt="Project 3">
-                <h3>Good Game Site</h3>
-                <p>Gaming app with rich UI/UX, system analysis, and full documentation.</p>
-            </div>
-            <div class="card">
-                <img src="./4.jpg" alt="Project 4">
-                <h3>Learning Portal</h3>
-                <p>Course hub using HTML/CSS/JS with responsive layout and smooth navigation.</p>
-            </div>
-            <div class="card">
-                <img src="./5.jpg" alt="Project 5">
-                <h3>Mini Challenges</h3>
-                <p>Set of React mini apps for learning hooks, Redux Toolkit, and routing.</p>
-            </div>
-            <div class="card">
-                <img src="./6.jpeg" alt="Project 6">
-                <h3>Static/Dynamic Blog</h3>
-                <p>Next.js blog using SSG and SSR with clean UI and dynamic routing.</p>
+            <div class="hero-text">
+                <h1 class="hero-title">Ahmed Mohamed Amin</h1>
+                <h2 class="hero-subtitle">Frontend Software Engineer</h2>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ahmed-amin-a15981248/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/A-Amiin" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <div class="about-grid">
-            <div class="education">
-                <h3>Education</h3>
-                <ul>
-                    <li>B.Sc. in Computer Science – October 6 University (2019–2023)</li>
-                    <li>Graduation Project: E-Learning System (Rated Excellent)</li>
-                </ul>
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
             </div>
-            <div class="experience">
-                <h3>Experience</h3>
-                <ul>
-                    <li>Frontend Engineer - Astra Tech (2025–present)</li>
-                    <li>Frontend Trainee - ITI, DEPI, Career180</li>
-                    <li>UI/UX Design & System Analysis</li>
-                </ul>
+            <div class="card">
+                <p class="section-subtitle">Passionate and detail-driven Frontend Engineer with deep expertise in React and a solid understanding of Next.js fundamentals. I care deeply about UI/UX, and I approach development with a balance of clean engineering and thoughtful design. Strong in system analysis and UI architecture, I aim to build experiences that are not just functional, but intuitive and impactful. I believe in continuous learning and always seek better opportunities to grow technically and contribute to meaningful, impactful products.</p>
             </div>
         </div>
     </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3 class="experience-title">Front-End & Cross-Platform Specialization – ITI</h3>
+                    <p class="experience-company">Information Technology Institute</p>
+                    <p class="experience-date">07/2025 – Present</p>
+                    <ul class="experience-details">
+                        <li>Enrolled in an intensive full-time track covering frontend from scratch: JavaScript, React, Next.js and UI architecture.</li>
+                        <li>Simultaneously learning mobile development using Flutter and React Native.</li>
+                        <li>Emphasis on real-world product development and responsive design for both web and mobile platforms.</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3 class="experience-title">Frontend Developer</h3>
+                    <p class="experience-company">Career 180 & Learn It Training Program</p>
+                    <p class="experience-date">09/2024 – 01/2025</p>
+                    <ul class="experience-details">
+                        <li>Gained solid understanding of modern frontend development: HTML, CSS, JS, React, and Redux Toolkit.</li>
+                        <li>Built 3 core projects and applied learned concepts through templates and mini-team challenges.</li>
+                        <li>Explored the basics of Next.js and its application in static and dynamic rendering.</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3 class="experience-title">Frontend Developer</h3>
+                    <p class="experience-company">DEPI - Ministry of Communications and IT</p>
+                    <p class="experience-date">04/2024 – 10/2024</p>
+                    <ul class="experience-details">
+                        <li>Led a team of 5 developers to design and develop a gaming web app (Good Game Site).</li>
+                        <li>Took ownership of UI/UX design, system analysis, and project documentation.</li>
+                        <li>Achieved top evaluation ranking across the cohort for quality, delivery, and teamwork.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./1.jpeg" alt="Tawasol Social Platform" class="project-thumbnail">
+                    </div>
+                    <h3 class="project-title">Tawasol - Social Media Platform</h3>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Redux Toolkit</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <p class="project-description">A dynamic social networking platform focused on seamless communication and interaction.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">View Client Repository</a>
+                        <a href="#" class="btn btn-primary">View Server Repository</a>
+                    </div>
+                    <div class="project-nav">
+                        <button class="project-nav-btn prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="project-nav-btn next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./2.webp" alt="Tawasol Social Platform" class="project-thumbnail">
+                    </div>
+                    <h3 class="project-title">Ecommerce Dashboard App</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Rechart.js</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Redux Toolkit</span>
+                    </div>
+                    <p class="project-description">A full-featured e-commerce admin dashboard for managing products, orders, and analytics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="card">
+                <h3 class="education-title">Bachelor’s Degree in Computer Science and Information Systems</h3>
+                <p class="education-institution">October 6 University</p>
+                <p class="education-date">09/2019 – 06/2023</p>
+                <p class="education-project">Graduation Project: E-Learning Management System – Awarded Excellent.</p>
+                <p class="education-description">Managed system analysis, design, and development of an intuitive user interface.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Technical Skills</h3>
+                    <div class="skills-subcategory">
+                        <h4>Frontend Technologies</h4>
+                        <ul class="skills-list">
+                            <li>HTML5 - CSS3 - Sass</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Bootstrap & Tailwind CSS</li>
+                            <li>React.js</li>
+                            <li>Next.js & Angular.js (Fundamentals)</li>
+                            <li>Redux Toolkit - Zustand</li>
+                            <li>ShadCN/UI - Radix UI</li>
+                            <li>TanStack Query/Table, clsx</li>
+                        </ul>
+                    </div>
+                    <div class="skills-subcategory">
+                        <h4>Backend Technologies</h4>
+                        <ul class="skills-list">
+                            <li>Node.js, Express.js (Basics)</li>
+                            <li>MongoDB, Firebase (Basics)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Other Skills</h3>
+                    <div class="skills-subcategory">
+                        <h4>Tools</h4>
+                        <ul class="skills-list">
+                            <li>Git - GitHub - Linux (Basic)</li>
+                        </ul>
+                    </div>
+                    <div class="skills-subcategory">
+                        <h4>Project Management & Methodologies</h4>
+                        <ul class="skills-list">
+                            <li>Agile Methodology</li>
+                            <li>Project Management</li>
+                            <li>System Analysis</li>
+                            <li>System Design</li>
+                        </ul>
+                    </div>
+                    <div class="skills-subcategory">
+                        <h4>Soft Skills</h4>
+                        <ul class="skills-list">
+                            <li>Problem-Solving</li>
+                            <li>Communication</li>
+                            <li>Leadership</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Info  -->
+    <section id="contact" class="section">
+        <div class="container contact-container">
+          <div class="section-header">
+            <h2 class="section-title">Contact</h2>
+          </div>
+      
+          <div class="contact-grid">
+            <!-- Form Left -->
+            <form class="contact-form">
+              <div class="input-row">
+                <input type="text" name="firstName" placeholder="First Name" required />
+                <input type="text" name="lastName" placeholder="Last Name" required />
+              </div>
+              <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+              <button type="submit" class="send-button">Send</button>
+            </form>
+      
+            <!-- Info Right -->
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Cairo, Egypt</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>+02 01063538149</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>ahmed.m.aminn@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     <!-- Footer -->
-    <footer class="footer" id="contact">
-        <p>Contact: <a href="mailto:ahmed.m.aminn@gmail.com">ahmed.m.aminn@gmail.com</a></p>
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/ahmed-amin-a15981248/" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/A-Amiin" target="_blank"><i class="fab fa-github"></i></a>
+    <footer class="section">
+        <div class="container">
+            <div style="text-align: center;" class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ahmed-amin-a15981248/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/A-Amiin" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <p>&copy; 2025 Ahmed Mohamed Amin. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-    <script>
-        // Toggle nav menu
-        document.addEventListener('DOMContentLoaded', () => {
-            const burger = document.querySelector('.burger');
-            const navLinks = document.querySelector('.nav-links');
-            burger.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-        });
-    </script>
+    <script src="./script.js"></script>
 </body>
-
 </html>
